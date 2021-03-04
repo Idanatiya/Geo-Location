@@ -1,0 +1,117 @@
+.container {
+    height: 100vh;
+    font-family: cursive;
+}
+
+header h1 {
+    margin-top: 50px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.location-btn {
+    width: 70px;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.place {
+    width: 50px;
+}
+
+#map {
+    width: 100%;
+    height: 500px;
+}
+
+.location-section {
+    margin-top: 100px;
+    background: #f8f8f8;
+    width: 42%;
+    border-radius: 5px;
+    font-family: cursive;
+    margin: 0 auto;
+    max-height: 50vh;
+    overflow-y: scroll;
+}
+
+.location-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    border-bottom: 1px solid gray;
+}
+
+.fa-trash {
+    color: #ff1a1a;
+    cursor: pointer;
+}
+
+.fa-trash:hover {
+    transform: scale(1.1);
+}
+
+/*form*/
+
+.add-loc-container {
+    background: black;
+    width: 350px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    display: none;
+}
+
+.add-loc-container form {
+    text-align: center;
+}
+
+.add-loc-container input {
+    padding: 0.5rem 1rem;
+}
+
+.add-loc-container label {
+    display: block;
+}
+
+.form-item {
+    margin: 10px;
+    display: block;
+}
+
+.show {
+    display: block;
+}
+
+.add-loc-btn {
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+    padding: 1rem 1.5rem;
+    font-size: 20px;
+    padding: 1rem 0.5rem;
+    background: white;
+    cursor: pointer;
+}
+
+.nav-links {
+    position: absolute;
+    font-size: 25px;
+    margin: 10px;
+    text-align: center;
+}
+
+.nav-links a {
+    color: black;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}

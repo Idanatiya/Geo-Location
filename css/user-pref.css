@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.form {
+    background: #efefef;
+    border-radius: 10px;
+    padding: 6rem;
+    font-size: 20px;
+    text-align: center;
+}
+
+.form #font-size {
+    padding: 0.5rem;
+}
+
+.title {
+    font-size: 50px;
+}
+
+.form label {
+    margin: 10px;
+}
+
+.form-item {
+    margin: 10px;
+    display: block;
+}
+
+.save-pref-btn {
+    background: black;
+    padding: 0.5rem 1rem;
+}
+
+.nav-links a {
+    font-size: 25px;
+    color: white;
+    margin: 10px;
+}

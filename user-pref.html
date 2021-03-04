@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5e621eabb9.js" crossorigin="anonymous"></script>
+    <title>Geo Ninja</title>
+    <link rel="icon" href="imgs/icon.png" />
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/user-pref.css">
+</head>
+
+<body onload="onInit()">
+    <div class="container">
+        <h1><i class="fas fa-cog fa-spin fa-2x"></i><span class="title">Set Prefernces</span></h1>
+        <section class="form">
+            <h1>Configure</h1>
+            <form onsubmit="onSetPrefernces(event)">
+                <div class="form-item">
+                    <label for="app-color">Application color:</label>
+                    <input type="color" name="appColor" id="app-color">
+                </div>
+                <div class="form-item">
+                    <label for="font-color">Font color:</label>
+                    <input type="color" name="fontColor" id="font-color">
+                </div>
+                <div class="form-item">
+                    <label for="font-size">Font Size:</label>
+                    <input type="range" name="fontSize" min="16" max="50" oninput="showFontSize(this)" />
+                    <span class="pref-font-size">16</span>
+                    <!-- <input type=" number" name="fontSize" id="font-size"> -->
+                </div>
+                <div class="form-item">
+                    <label for="font-size">Font Family:</label>
+                    <select name="fontFamily">
+                        <option value="cursive">Cursive</option>
+                        <option value="monospace">Monospace</option>
+                        <option value="arial">Arial</option>
+                    </select>
+                </div>
+                <div class="form-item">
+                    <label for="date-birth">Date Of Birth:</label>
+                    <input type="date" id="date-birth" name="birthDate" />
+                </div>
+                <div class="form-item">
+                    <label for="time">Time of Birth</label>
+                    <input type="time" id="time" name="birthTime">
+                </div>
+                <button type="submit" class="btn save-pref-btn">Save Prefernces</button>
+            </form>
+        </section>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="map.html">Geo Map</a>
+        </nav>
+    </div>
+    <script src="js/services/util-service.js"></script>
+    <script src="js/services/storage-service.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/services/user-pref-service.js"></script>
+    <script src="js/user-pref-controller.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/map.css">
+    <link rel="stylesheet" href="css/base.css">
+    <script src="https://kit.fontawesome.com/5e621eabb9.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imgs/icon.png" />
+    <title>GeoNinja</title>
+</head>
+
+<body onload="onInitMap()">
+    <div class="container">
+        <div id="map" onclick="openModal()"></div>
+        <img src="imgs/location.png" class="location-btn" onclick="onSetCenter()" />
+        <header>
+            <nav class="nav-links">
+                <a href="index.html">Home |</a>
+                <a href="user-pref.html">User Prefernces</a>
+            </nav>
+            <h1>Locations...</h1>
+        </header>
+        <section class="location-section">
+            <ul class="location-list">
+
+            </ul>
+        </section>
+
+        <p id="locationError"></p>
+    </div>
+
+    <div class="add-loc-container">
+        <form onsubmit="onAddLocation(event)">
+            <div class="form-item">
+                <label for="loc-name">Location Name:</label>
+                <input type="text" name="addLoc" id="loc-name" placeholder="Enter location">
+            </div>
+            <button class="add-loc-btn" onclick="closeModal()">Add Location</button>
+        </form>
+    </div>
+    <script src="js/services/util-service.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/services/util-service.js"></script>
+    <script src="js/services/storage-service.js"></script>
+    <script src="js/services/map-service.js"></script>
+    <script src="js/map-controller.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQigCXfm-p5j0gFc2LVoLLhd1EW1gXWTo&callback=initMap"
+        type="text/javascript"></script>
+</body>
+
+</html>

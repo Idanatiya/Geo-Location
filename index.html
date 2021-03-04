@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://kit.fontawesome.com/5e621eabb9.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imgs/icon.png" />
+
+    <title>Geo location</title>
+</head>
+
+<body onload="loadPrefSettings()">
+    <div class="container">
+        <img src="imgs/logo.png" class="logo" />
+        <header>
+            <h1>Welcome to GeoNinja!</h1>
+            <div class="forcast-section">
+                Forcast:<span class="forcast"></span>
+                <p>
+                    You born at <span class="birthDate"></span> <span class="birthTime"></span>
+                </p>
+            </div>
+        </header>
+        <section class="intro-section">
+            <p>Geo ninja is a simple web application that can help u to save locations and much more!</p>
+            <h3>Help to improve the application and support:</h3>
+            <i class="fab fa-twitter fa-2x"></i>
+            <i class="fab fa-github fa-2x"></i>
+            <span onclick><i class="fab fa-instagram fa-2x"></i></span>
+        </section>
+        <nav>
+            <ul>
+                <li>
+                    <a href="user-pref.html" target="_blank" class="btn">User Preferences</a>
+                </li>
+                <li>
+                    <a href="map.html" class="btn">Map</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <footer>
+        <span> &copy; Geo ninja</span>
+    </footer>
+    <script src="js/services/util-service.js"></script>
+    <script src="js/services/storage-service.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/services/user-pref-service.js"></script>
+    <script src="js/user-pref-controller.js"></script>
+</body>
+
+</html>
